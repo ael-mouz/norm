@@ -4,6 +4,8 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
+mkdir ~/.norm
+
 cat > ~/.norm/norm.sh << 'EOF'
 #!/bin/bash
 
@@ -55,6 +57,7 @@ norm() {
     echo "Processing complete."
 }
 
+norm
 deactivate
 rm -rf venv
 EOF
